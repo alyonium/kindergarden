@@ -1,0 +1,126 @@
+html {
+
+}
+
+body {
+
+}
+
+.slide1 {
+    height: 100vh;
+    background-image: url('../images/background-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide1__header {
+    padding: 40px;
+    background: #FCFAF7;
+    border-radius: 0 0 60px 60px;
+}
+
+.header__name {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FEB6B9;
+    margin: 0;
+    cursor: pointer;
+}
+
+.header__second-name {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #787878;
+    margin: 0;
+}
+
+.header__second-name:before {
+    content: '';
+    width: 0;
+    height: 60px;
+    position: absolute;
+    border: 1px solid #C5C5C5;
+    top: -10px;
+    left: 0;
+}
+
+.header__phone {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #8AC6D1;
+    transition: 0.3s;
+}
+
+.header__phone:hover {
+    color: #0077C2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.slide1__nav {
+
+}
+
+.nav__links {
+    background: #FEB6B9;
+    padding: 10px 40px;
+    border-radius: 0 0 17px 17px;
+    position:  relative;
+}
+
+.nav__links:before {
+    content: '';
+    width: 150px;
+    height: 41px;
+    border-radius: 0 0 0 17px;
+    background-color: #DC8F92;
+    position: absolute;
+    top:  0;
+    left:  0;
+    z-index: 10;
+}
+
+.nav__links:after {
+    content: '';
+    width: 150px;
+    height: 41px;
+    border-radius: 0 0 17px 0;
+    background-color: #F8CE90;
+    position: absolute;
+    top:  0;
+    right:  0;
+    z-index: 10;
+}
+
+.links__link {
+    font-family: 'Proxima', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    z-index: 11;
+}
+
+.links__link:hover {
+    transition: 0.3s;
+    color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 576px) {
+
+}
