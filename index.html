@@ -13,37 +13,76 @@
     <link rel="icon" href="images/toy.png" type="image/png">
 </head>
 <body>
-<div class="slide1">
+<div class="slide1 align-items-start" data-paroller-factor='0.5' data-paroller-type='background' data-paroller-direction='vertical'>
     <div class="container">
         <div class="row">
             <div class="row w-100 slide1__header align-items-center">
-                <div class="col-lg-4">
-                    <h1 class="header__name">Розовая Башня</h1>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h1 class="header_pink header_main">Розовая Башня</h1>
                 </div>
-                <div class="col-lg-1">
-                    <h2 class="header__second-name">Детский клуб</h2>
+                <div class="col-lg-1 col-md-1 col-sm-1">
+                    <h2 class="header_extra">Детский клуб</h2>
                 </div>
-                <div class="offset-lg-2 col-lg-5">
+                <div class="offset-lg-2 col-lg-5 offset-md-2 col-md-5 offset-sm-2 col-sm-5">
                     <a href="tel: +74950237045" class="header__phone">+7 (495)-023-70-45</a>
                 </div>
             </div>
             <div class="row w-100 slide1__nav align-items-center">
                 <div class="offset-lg-2 col-lg-8">
                     <nav class="row nav__links justify-content-around">
-                        <a href="#" class="links__link">Главная</a>
-                        <a href="#" class="links__link">Программы</a>
-                        <a href="#" class="links__link">Цены и расписание</a>
-                        <a href="#" class="links__link">Контакты</a>
-                        <a href="#" class="links__link">Special</a>
+                        <a href="#" class="links__link links__link_underline">Главная</a>
+                        <a href="#" class="links__link links__link_underline">Программы</a>
+                        <a href="#" class="links__link links__link_underline">Цены и расписание</a>
+                        <a href="#" class="links__link links__link_underline">Контакты</a>
+                        <a href="#" class="links__link links__link_underline">Special</a>
                     </nav>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="slide2 align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="row w-100 slide2__header align-items-center justify-content-center">
+                <h3 class="header header_pink">О клубе</h3>
+            </div>
+            <div class="row w-100 slide2__description">
+                <div class="offset-lg-1 col-lg-5">
+                    <p class="description__text">
+                        Монтессори Центр «Розовая Башня» - одно из редких мест, которые по-настоящему нравятся детям и их родителям. Здесь с Вашими детьми работают только профессиональные педагоги, в задачи которых входит максимально раскрыть умственный и творческий потенциал ребенка и создать комфортную среду для его полноценного и гармоничного развития.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <p class="description__text description__text_ta-right">
+                        Всем известно, что формирование человека как личности происходит в первую очередь в раннем детстве. Именно в этом возрасте ребенок наиболее восприимчив к обучению и развитию творческих способностей. Мария Монтессори сумела доказать, что дети хорошо (эффективно, быстро) развиваются, если они развиваются с удовольствием.
+                    </p>
+                </div>
+                <div class="offset-lg-2 col-lg-8">
+                    <p class="description__text description__text_ta-center">
+                        В Монтессори детском саду дети обучаются не только успешно, но и с большим удовольствием. Каждый ребенок сам выбирает именно то занятие, которое ему по нраву: одним нравится рисовать, другим - играть в развивающие игры.
+                    </p>
+                </div>
+                <div class="offset-lg-1 col-lg-10">
+                    <p class="description__text description__text_ta-center">
+                        Нам важно заинтересовать ребёнка, а не принуждать его, вовлекать его в захватывающий процесс развития и обучения, создавать и поддерживать в нем мотивацию к познанию и развитию. Свой выбор ребенок делает сам. Наша задача - помочь ребенку сделать выбор правильным.
+                    </p>
+                </div>
+            </div>
+            <div class="slide2__pictures slide2__pictures_right scene">
+                <img data-depth="0.40" src="images/camera.png" alt="cameras">
+            </div>
+            <div class="slide2__pictures slide2__pictures_left scene">
+                <img data-depth="0.40" src="images/camera2.png" alt="cameras">
+            </div>
+        </div>
+    </div>
+</div>
+AAAAAAAAAAAAAAAAAAAAAAAAAA
 </body>
 <script src="scripts/jquery.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/paroller.js/dist/jquery.paroller.min.js"></script>
 <script src="scripts/script.js"></script>
 </html>
