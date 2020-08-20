@@ -186,7 +186,7 @@ body {
     left: -145px;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1200px) {
     .header__phone,
     .header_main {
         font-size: 32px;
@@ -232,7 +232,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 991px) {
     .header__phone {
         font-size: 25px;
     }
@@ -268,34 +268,93 @@ body {
         bottom: -20px;
     }
 
-    .links__link {
-        font-size: 20px;
-    }
-
-    .links__link_underline:hover {
-        background-image: none;
-        color: #880e4f;
-        transition: 0.2s;
+    .slide2 .container .row {
+        position: relative;
+        left: 10px;
     }
 
     .nav__links {
         padding: 10px 10px 4px;
     }
+}
+
+@media (max-width: 767px) {
+    .slide1 {
+        height: 100vh;
+    }
+
+    .slide1__header {
+        border-radius: 17px 17px 0 0;
+    }
+
+    .slide2 {
+        height: 120vh;
+    }
+
+    .header_main,
+    .header_extra {
+        text-align: center;
+    }
+
+    .header__phone {
+        justify-content: center;
+        display: flex;
+    }
+
+    .links__link {
+        font-size: 16px;
+    }
 
     .nav__links:before {
-        width: 110px;
+        width: 90px;
     }
 
     .nav__links:after {
-        width: 100px;
+        width: 80px;
+    }
+
+    .header_extra:before {
+        content: none;
+    }
+
+    .header_pink {
+        font-size: 45px;
     }
 }
 
-
-@media (min-width: 576px) {
-    .slide1,
-    .slide2 {
-        height: 150vh;
+@media (max-width: 575px) {
+    .nav__links:after,
+    .nav__links:before {
+        content: none;
     }
+
+    .slide2 {
+        height: 200vh;
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links__link {
+        text-align: center;
+    }
+
+    .slide2__pictures {
+        filter: blur(4px);
+    }
+
+    .slide2__pictures.slide2__pictures_left {
+        bottom: 190px!important;
+    }
+
+    .description__text {
+        position: relative;
+        left: -5px;
+    }
+}
+
+@media (max-width: 320px) {
 
 }

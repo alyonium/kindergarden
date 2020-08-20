@@ -12,6 +12,12 @@ $(document).ready(function () {
         });
     }
 
+    //first slide small device
+    if ($(window).width() <= 991) {
+        $('.slide1').removeClass('align-items-start');
+        $('.slide1').addClass('align-items-center');
+    }
+
     //first slide parallax
     $('.slide1').paroller();
 
