@@ -3,7 +3,7 @@ $(document).ready(function () {
     //h1 animation
     if ($(window).width() >= 992) {
         let isAnimate = false;
-        $('.header_main').hover(function() {
+        $('.header_main').hover(function () {
             if (!isAnimate) {
                 $(this).toggleClass('animate__animated animate__bounce')
                 isAnimate = true;
@@ -21,18 +21,42 @@ $(document).ready(function () {
     //first slide parallax
     $('.slide1').paroller();
 
+
     //cameras moving
     if ($(window).width() >= 992) {
         const scene = $('.scene')[0];
-        const parallaxFirst = new Parallax(scene);
+        const parallax1 = new Parallax(scene);
 
         const scene2 = $('.scene')[1];
-        const parallaxSecond = new Parallax(scene2);
+        const parallax2 = new Parallax(scene2);
+
+        const scene3 = $('.scene')[2];
+        const parallax3 = new Parallax(scene3);
+
+        const scene4 = $('.scene')[3];
+        const parallax4 = new Parallax(scene4);
+
+        // const scene5 = $('.scene')[4];
+        // const parallax5 = new Parallax(scene5);
+
+        // const scene6 = $('.scene')[5];
+        // const parallax6 = new Parallax(scene6);
     }
 
-
+    $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 700,
+        prevArrow: $('.left-arrow'),
+        nextArrow: $('.right-arrow'),
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                }
+            }],
+    })
 
 })
-
-// var scene = document.getElementById('scene');
-// var parallaxInstance = new Parallax(scene);
