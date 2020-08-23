@@ -47,16 +47,45 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 700,
-        prevArrow: $('.left-arrow'),
-        nextArrow: $('.right-arrow'),
+        prevArrow: $('.slider__left-arrow'),
+        nextArrow: $('.slider__right-arrow'),
         responsive: [
             {
-                breakpoint: 575,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                     infinite: true,
                 }
             }],
     })
+
+    $('.cards').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 700,
+        prevArrow: $('.cards__left-arrow'),
+        nextArrow: $('.cards__right-arrow'),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                }
+            }]
+    });
 
 })
