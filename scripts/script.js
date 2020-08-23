@@ -21,6 +21,7 @@ $(document).ready(function () {
     //first slide parallax
     $('.slide1').paroller();
 
+    $('.slide4').paroller();
 
     //cameras moving
     if ($(window).width() >= 992) {
