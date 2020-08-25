@@ -21,6 +21,8 @@ $(document).ready(function () {
     //first slide parallax
     $('.slide1').paroller();
 
+
+    //fourth slide parallax
     $('.slide4').paroller();
 
     //cameras moving
@@ -44,6 +46,7 @@ $(document).ready(function () {
         // const parallax6 = new Parallax(scene6);
     }
 
+    //kids photo slider
     $('.slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -60,6 +63,7 @@ $(document).ready(function () {
             }],
     })
 
+    //teachers card slider
     $('.cards').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -73,12 +77,12 @@ $(document).ready(function () {
                     slidesToShow: 2,
                 }
             },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-            }
-        },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
             {
                 breakpoint: 576,
                 settings: {
@@ -89,4 +93,26 @@ $(document).ready(function () {
             }]
     });
 
+
+    //map
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+                center: [55.675544, 37.476717],
+                zoom: 16,
+                controls: []
+            }),
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Наш детский клуб!',
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'images/mark.svg',
+                iconImageSize: [70, 70],
+            });
+
+        myMap.geoObjects
+            .add(myPlacemark)
+    }
 })
