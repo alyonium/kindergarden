@@ -318,7 +318,7 @@ body {
 
 .card {
     padding: 40px 20px;
-    box-shadow: 0 0 8px 0px rgba(0,0,0,0.23);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.23);
     border-radius: 35px;
     background: #FFFFFF;
     display: flex !important;
@@ -367,7 +367,7 @@ body {
 .slide6 {
     padding: 15px;
     margin-top: 20px;
-    background: rgba(254, 182, 185, 0.32);
+    background: #fee8e9;
 }
 
 footer {
